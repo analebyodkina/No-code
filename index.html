@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="owl.carousel.css">
+	<link rel="stylesheet" href="owl.theme.default.css">
+	<link rel="stylesheet" href="scss/style.css">
+
+	<title>No-Code</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="#" class="header__logo">
+				<img src="img/logo.svg" alt="No-Code">
+			</a>
+			<nav class="nav">
+				<ul class="nav__ul" id="navUl">
+					<li class="nav__li"><a href="#" class="nav__a">Course topics</a></li>
+					<li class="nav__li"><a href="#" class="nav__a">What students say</a></li>
+					<li class="nav__li _ml-auto"><a href="#" class="nav__a">Sign in</a></li>
+					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" id="openPopUp"></a></li>
+					<span class="material-icons icon-close" onclick="navToggle()">close</span>
+				</ul>
+				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+			</nav>
+			<div class="pop-up" id="popUp">
+				<div class="pop-up__container">
+					<div class="pop-up__body">
+						<h2 class="pop-up__title">Subscribe</h2>
+						<form>
+							<input type="text" placeholder="Enter your name">
+							<input type="email" placeholder="Enter your email">
+							<button type="submit" class="btn" data-back="Click me" data-front="Get started"></button>						
+						</form>
+						<div class="pop-up__close" id="closePopUp">&#10006</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<section class="main-screen">
+		<div class="container main-screen__container">
+			<div class="main-screen__title">Learn no-code tools today.</div>
+			<div class="main-screen__desc">Create beautiful webflow sites with flowbase. Clone for
+				free and get started building a site today.</div>
+			<a href="#" class="main-screen__img">
+				<div class="video">
+					<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M44.9167 35L30.9167 46.0833L30.9167 23.9167L44.9167 35Z" fill="#001A49" />
+					</svg>
+				</div>
+			</a>
+			<div class="main-screen__btn">
+				<a href="#" class="btn main-section__btn" data-back="Click me" data-front="Get started" id="openPopUp"></a>
+			</div>
+			<div class="students main-screen__students">
+				<div class="students__list">
+					<img src="img/user1.png" alt="user">
+					<img src="img/user2.png" alt="user">
+					<img src="img/user3.png" alt="user">
+				</div>
+				<div class="students__text">Join over <span>4,000+</span> students</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="learn-section">
+		<div class="learn-section__circle-big"></div>
+		<div class="learn-section__circle-small"></div>
+		<div class="container learn-section__container">
+			<div class="counter learn-section__counter">
+				<div class="counter__item">
+					<p class="counter__title">12,201</p>
+					<p class="counter__text">happy students</p>
+				</div>
+				<div class="counter__item">
+					<p class="counter__title">3,2911</p>
+					<p class="counter__text">lectures</p>
+				</div>
+				<div class="counter__item">
+					<p class="counter__title">1,291</p>
+					<p class="counter__text">5 star reviews</p>
+				</div>
+			</div>
+			<h3 class="title learn-section__title">What you’ll learn</h3>
+			<div class="learn-section__desc">Create beautiful webflow sites with flowbase. Clone for
+				free and get started building a site today.</div>
+			<div class="skills learn-section__skills">
+				<div class="skills__item">
+					<div class="skills__image">
+						<img src="img/triangle-purple.svg" alt="our logo">
+						<img src="img/triangle-yellow.svg" alt="our logo">
+					</div>	
+					<div class="skills__info">
+						<h3 class="skills__title">Analyzing User Data</h3>
+						<div class="skills__desc">
+							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
+					</div>				
+					<div class="skills__counter">
+						<p>6 videos</p>
+						<p>4.5 hours</p>
+					</div>
+				</div>
+				<div class="skills__item">
+					<div class="skills__image">
+						<img src="img/triangle-purple.svg" alt="our logo">
+						<img src="img/triangle-yellow.svg" alt="our logo">
+					</div>	
+					<div class="skills__info">
+						<h3 class="skills__title">User Persona</h3>
+						<div class="skills__desc">
+							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
+					</div>				
+					<div class="skills__counter">
+						<p>6 videos</p>
+						<p>4.5 hours</p>
+					</div>
+				</div>
+				<div class="skills__item">
+					<div class="skills__image">
+						<img src="img/triangle-purple.svg" alt="our logo">
+						<img src="img/triangle-yellow.svg" alt="our logo">
+					</div>	
+					<div class="skills__info">
+						<h3 class="skills__title">Prototyping</h3>
+						<div class="skills__desc">
+							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
+					</div>				
+					<div class="skills__counter">
+						<p>6 videos</p>
+						<p>4.5 hours</p>
+					</div>
+				</div>
+				<div class="skills__item">
+					<div class="skills__image">
+						<img src="img/triangle-purple.svg" alt="our logo">
+						<img src="img/triangle-yellow.svg" alt="our logo">
+					</div>	
+					<div class="skills__info">
+						<h3 class="skills__title">Storyboarding</h3>
+						<div class="skills__desc">
+							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
+					</div>				
+					<div class="skills__counter">
+						<p>6 videos</p>
+						<p>4.5 hours</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="instructor-section">
+		<div class="container instructor-section__container">
+			<div class="instructor-section__info">
+				<h3 class="title instructor-section__title">Hi, I am David, your course instructor.</h3>
+				<div class="instructor-section__desc">
+					Create beautiful webflow sites with flowbase. Clone for free and get started building a site today.
+				</div>
+			</div>
+			<div class="instructor-section__image">
+				<img src="img/user-big.png" alt="user-photo">
+			</div>
+		</div>
+	</section>
+
+	<section class="students-section">
+		<h3 class="title students-section__title">What my students say</h3>
+		<div class="students-section__desc">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</div>
+		<div class="owl-carousel owl-theme students-section__carousel">
+			<div class="item owl-carousel__item">
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				</div>
+				<div class="item__footer">
+					<div class="item__icon">
+						<img src="img/user4.png" alt="user-photo">
+					</div>
+					<div class="item__name">Henk Fortuin</div>
+					<div class="item__profession">Founder of Crips</div>
+				</div>
+			</div>
+			<div class="item owl-carousel__item">
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				</div>
+				<div class="item__footer">
+					<div class="item__icon">
+						<img src="img/user5.png" alt="user-photo">
+					</div>
+					<div class="item__name">Opi Watihana</div>
+					<div class="item__profession">Founder of Crips</div>
+				</div>
+			</div>
+			<div class="item owl-carousel__item">
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				</div>
+				<div class="item__footer">
+					<div class="item__icon">
+						<img src="img/user6.png" alt="user-photo">
+					</div>
+					<div class="item__name">Annet Abramson</div>
+					<div class="item__profession">Founder of Crips</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<div class="container">
+		<section class="faq">
+			<div class="container faq__container">
+				<div class="faq__title">Frequently asked questions</div>
+				<div class="accordion faq__list">
+					<div class="accordion__item">
+						<div class="accordion__header">
+							<div class="accordion__title">Will I get full access to the course after purchasing?</div>
+							<div class="accordion__icon">
+								<span class="material-icons">expand_more</span>
+							</div>
+						</div>
+						<div class="accordion__content">
+							<div class="accordion__description">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__header">
+							<div class="accordion__title">Do you offer a discount?</div>
+							<div class="accordion__icon">
+								<span class="material-icons">expand_more</span>
+							</div>
+						</div>
+						<div class="accordion__content">
+							<div class="accordion__description">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__header">
+							<div class="accordion__title">Do you offer support after joining?</div>
+							<div class="accordion__icon">
+								<span class="material-icons">expand_more</span>
+							</div>
+						</div>
+						<div class="accordion__content">
+							<div class="accordion__description">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="expert-section">
+		<div class="expert-section__circle-big"></div>
+		<div class="expert-section__circle-small"></div>
+		<div class="container expert-section__container">
+			<div class="expert-section__guarantee">Get 30 Days Money Back Guarantee</div>
+			<h2 class="expert-section__title">Ready to learn UX Design from the expert?</h2>
+			<a href="#" class="btn expert-section__btn" data-back="Click me" data-front="Get started"></a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__top">
+				<div class="footer__logo">
+					<img src="img/Logo.svg" alt="logo">
+				</div>
+				<form class="footer__form">
+					<input type="email" placeholder="Stay in the loop - sign up with your email">
+					<button class="btn footer__btn" data-back="Click me" data-front="Subscribe">						
+										
+					</button>
+				</form>	
+			</div>
+			<div class="footer__bottom">
+				<div class="bottom__col col">
+					<h4 class="col__title">Help Menu</h4>
+					<ul class="col__ul">	
+						<li><a href="#">About</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Works</a></li>
+						<li><a href="#">Career</a></li>
+						
+					</ul>
+				</div>
+				<div class="bottom__col col">
+					<h4 class="col__title">smth</h4>
+					<ul class="col__ul">	
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Help & Support</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						
+					</ul>
+				</div>
+				<div class="bottom__col col">
+					<h4 class="col__title">Product</h4>
+					<ul class="col__ul">	
+						<li><a href="#">Essential Landing Page</a></li>
+						<li><a href="#">Alpha Dashboard Pro</a></li>
+						<li><a href="#">Karnel Admin Dashboard</a></li>
+						<li><a href="#">Gray UI Kit</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- SCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<script src="owl.carousel.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

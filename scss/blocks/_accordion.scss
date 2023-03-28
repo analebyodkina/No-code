@@ -1,0 +1,93 @@
+.accordion {
+	&__header {
+		display: flex;
+		column-gap: .5rem;
+		padding: 28px 40px;
+		cursor: pointer;
+
+		@include tablet {
+			padding: 20px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		@include text($ffMain, 700, 20px, 24px, $darkBlue);
+
+	}
+
+	&-open {
+		.material-icons {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__description {
+		@include text($ffMain, 400, 16px, 26px, $darkGreyBlue);
+		padding: 0 40px;
+		padding-bottom: 45px;
+		max-width: 667px;
+
+		@include tablet {
+			font-size: 12px;
+			line-height: 17px;
+			padding: 0 20px;
+			padding-bottom: 25px;
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+	}
+
+	&__icon {
+		width: 48px;
+		height: 48px;
+		display: grid;
+		place-items: center;
+		position: relative;
+		flex-shrink: 0;
+		border-radius: $radiusImage;
+
+		@include tablet {
+			width: 35px;
+			height: 35px;
+
+			.material-icons {
+				font-size: 18px;
+			}
+		}
+
+		&::before {
+			background: $orangeGrad;
+			opacity: 0.2;
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-radius: $radiusImage;
+		}
+
+		.material-icons {
+			transition: $transition;
+			color: $purple;
+		}
+	}
+
+	&__item {
+		border-radius: .25rem;
+		position: relative;
+		transition: all .25s ease;
+		background-color: #fff;
+		border: 1px solid rgba($purple, 0.2);
+		border-radius: $radius;
+	}
+
+	&__content {
+		overflow: hidden;
+		height: 0;
+		transition: all .25s ease;
+	}
+}

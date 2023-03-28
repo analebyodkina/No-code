@@ -1,0 +1,59 @@
+.students-section {
+    background: $purpleGrad;
+    padding: 12rem 0 12rem;
+    text-align: center;
+    position: relative;
+    &__title {
+        color: $white;
+    }
+    &__desc {
+        @include text($ffMain, 400, 2rem, 3rem, $white);
+        color: $white;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin-bottom: 10rem;   
+        max-width: 565px;  
+        margin-inline: auto;   
+    }    
+}
+.owl-carousel {  
+    padding-left: 18rem;  
+    .item {
+        background: $carousel-card;
+        border-radius: 20px;
+        padding: 40px 40px 50px 50px;
+        text-align: start;
+        &__desc {
+            @include text($ffMain, 400, 2rem, 3rem, $white);
+            margin-bottom: 3rem;  
+            // min-width: 460px;                   
+        }    
+        &__footer {
+            position: relative;
+            text-align: start;
+            padding-left: 64px;
+        }    
+        &__icon {
+            max-width: 60px;
+            border-radius: $radiusImage;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-right: 14px;
+        }
+    
+        &__name {
+            @include text($ffMain, 700, 1.6rem, 2rem, $white);
+            margin-bottom: 4px;
+        }
+    
+        &__profession {
+            @include text($ffMain, 400, 1.6rem, 2rem, $white);
+            font-family: 'Muli';
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+    
+}
+

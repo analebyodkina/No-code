@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	@include tablet-small {
+		font-size: 7px;
+	}
+}
+body {
+	font-family: $ffMain;
+	background: $white;
+}
+
+.container {
+	padding: 0 20px;
+	max-width: $container;
+	margin-inline: auto;
+}
+
+section {
+	max-width: $section;
+	margin-inline: auto;
+	overflow-x: hidden;
+}
+
+.btn {
+	opacity: 1;
+	outline: 0;	
+	position: relative;	
+	display: inline-block;
+	&:after{
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		@include text($ffMain, 400, 2rem, 2.3rem, $white);
+		text-align: center;		
+		border-radius: $radiusRound;
+		padding: 21px 49px;
+		display: block;
+		transition: .3s all ease-in-out;
+		position: absolute;
+		background: $orangeGrad;
+		content: attr(data-back);
+		transform: translateY(-50%) rotateX(90deg);
+	}	  
+	&:before{		
+		top: 0;
+		left: 0;
+		opacity: 1;
+		@include text($ffMain, 400, 2rem, 2.3rem, $white);
+		display: block;
+		padding: 21px 49px;
+		border-radius: $radiusRound;
+		transition: .3s all ease-in-out;
+		position: relative;
+		background: $purpleGrad;
+		content: attr(data-front);
+		transform: translateY(0) rotateX(0);
+	}
+	&:hover{    
+		&:after{
+		  opacity: 1;
+		  transform: translateY(0) rotateX(0);
+		}		
+		&:before{
+		  opacity: 0;
+		  transform: translateY(50%) rotateX(90deg);
+		}
+	}
+	&:active {
+		animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
+		@keyframes scale-down-center {
+			0% {
+			  -webkit-transform: scale(1);
+					  transform: scale(1);
+			}
+			100% {
+			  -webkit-transform: scale(0.93);
+					  transform: scale(0.93);
+			}
+		  }
+	}
+}
+.material-icons {
+	cursor: pointer;
+}
+.title {
+	@include text($ffAdd, 700, 4rem, 5rem, $darkBlue);
+	margin-bottom: 20px;
+}

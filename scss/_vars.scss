@@ -1,0 +1,38 @@
+
+
+// fonts
+$ffMain: 'Mulish', sans-serif;
+$ffAdd: 'Montserrat', sans-serif;
+
+// colors
+$white: #FFFFFF;
+$grey: #F4F9FA;
+$lightgrey: #E7EAEB;
+$darkBlue: #001A49;
+$darkGreyBlue: #4F596A;
+$purple: #9F07FF;
+$purple-semi: #8639B5;
+$purpleGrad: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+$orangeGrad: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+$yellowGrad: linear-gradient(90deg, #FFD7A9 0%, #FFAE70 100%);
+$carousel-card: rgba(76, 0, 112, 0.195968);
+
+
+
+// container
+$container: 1166px;
+$section: 1920px;
+
+// radius
+$radius: 21px;
+$radiusRound: 33px;
+$radiusImage: 50%;
+
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+// utils
+$transition: .2s all ease-in-out;

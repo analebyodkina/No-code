@@ -1,0 +1,124 @@
+.footer {
+    padding: 6.3rem 0 8rem 0;
+    position: relative;
+    @include mobile {
+        padding: 3.3rem 0 4rem 0;          		                 
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $purpleGrad;
+        mix-blend-mode: normal;
+        opacity: 0.05;
+        z-index: -5;        
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8rem;
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;            		                 
+        }
+    }
+    &__logo {
+        max-width: 15rem;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: $white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.0501257);
+        border-radius: $radiusRound;	
+        padding: 0.8rem 0.8rem 0.8rem 0;
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;
+            background: transparent;
+            box-shadow: none;		                 
+        }
+	input {
+		width: 100%;
+			background: transparent;            
+			border-radius: $radiusRound;
+			padding: 15px 15px 15px 4rem;
+			border: 0;
+			outline: 0; 
+			@include mobile{                
+                background: $white;				                              
+            }          
+			@include text($ffMain, 400, 1.6rem, 2.6rem, $darkGreyBlue);
+			&::placeholder {
+				@include text($ffMain, 400, 1.6rem, 1.9rem, $darkGreyBlue); 				
+                mix-blend-mode: normal;
+                opacity: 0.5;                           
+			} 			       
+	}
+	}
+    &__btn {
+        border: none;    
+		outline: none;
+		border-radius: $radiusRound;   
+        cursor: pointer;
+        &:before {            
+            @include text($ffMain, 700, 1.6rem, 2rem, $white);
+			padding: 15px 30px;			
+		}
+		&:after{
+            @include text($ffMain, 700, 1.6rem, 2rem, $white);
+			padding: 15px 30px;            
+		}	
+    }
+    &__bottom {
+        padding-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 12rem; 
+        @include mobile {
+            gap: 10px;
+        }     
+    }
+}   
+.col {
+    &__title {
+        @include text($ffMain, 700, 1.6rem, 2rem, $darkBlue);
+        margin-bottom: 20px;
+        &:hover {
+            .col__ul {
+                display: block;
+            }
+        }        
+    }
+    &__ul {
+        @include mobile {
+            display: none;
+        }
+        li:not(:last-child) {
+            margin-bottom: 20px;
+            transition: $transition;
+            @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
+            &:hover {
+                transform: scale(1.2) translateX(4px);
+            } 
+        }
+        a {
+            @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
+        } 
+    }
+    &:nth-child(2) {
+        .col__title {
+            color: transparent;
+        }
+    }
+    
+}
+

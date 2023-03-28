@@ -1,0 +1,31 @@
+@mixin text($ffMain, $fw, $fs, $lh, $color) {
+    font-family: $ffMain;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin desktop-small {
+    @media (max-width: $desktop-small) {
+      @content;
+    }
+  }
+
+  @mixin tablet-small {
+    @media (max-width: $tablet-small) {
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  }
+
+  @mixin mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  }

@@ -1,0 +1,22 @@
+.faq {
+	margin-top: 15rem;
+	@include mobile {
+		margin-top: 6rem;
+	}	
+	&__container {
+		padding: 0 15.5rem;
+		@include tablet {
+			padding: 0 20px;
+		}
+	}
+	&__title {
+		@include text($ffAdd, 700, 4.6rem, 5.6rem, $darkBlue);
+		text-align: center;
+		margin-bottom: 51px;
+	}
+
+	&__list {
+		display: grid;
+		gap: 20px;
+	}
+}
