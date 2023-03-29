@@ -27,7 +27,7 @@
 					<li class="nav__li"><a href="#" class="nav__a">Course topics</a></li>
 					<li class="nav__li"><a href="#" class="nav__a">What students say</a></li>
 					<li class="nav__li _ml-auto"><a href="#" class="nav__a">Sign in</a></li>
-					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" id="openPopUp"></a></li>
+					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a></li>
 					<span class="material-icons icon-close" onclick="navToggle()">close</span>
 				</ul>
 				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
@@ -62,7 +62,7 @@
 				</div>
 			</a>
 			<div class="main-screen__btn">
-				<a href="#" class="btn main-section__btn" data-back="Click me" data-front="Get started" id="openPopUp"></a>
+				<a href="#" class="btn main-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a>
 			</div>
 			<div class="students main-screen__students">
 				<div class="students__list">
@@ -107,10 +107,10 @@
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
 					</div>				
-					<div class="skills__counter">
+					<a href="#" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
-					</div>
+					</a>
 				</div>
 				<div class="skills__item">
 					<div class="skills__image">
@@ -122,10 +122,10 @@
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
 					</div>				
-					<div class="skills__counter">
+					<a href="#" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
-					</div>
+					</a>
 				</div>
 				<div class="skills__item">
 					<div class="skills__image">
@@ -137,10 +137,10 @@
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
 					</div>				
-					<div class="skills__counter">
+					<a href="#" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
-					</div>
+					</a>
 				</div>
 				<div class="skills__item">
 					<div class="skills__image">
@@ -152,10 +152,10 @@
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
 					</div>				
-					<div class="skills__counter">
+					<a href="#" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -236,6 +236,19 @@
 					</div>
 					<div class="accordion__item">
 						<div class="accordion__header">
+							<div class="accordion__title">Do you give money back guarantee?</div>
+							<div class="accordion__icon">
+								<span class="material-icons">expand_more</span>
+							</div>
+						</div>
+						<div class="accordion__content">
+							<div class="accordion__description">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item">
+						<div class="accordion__header">
 							<div class="accordion__title">Do you offer a discount?</div>
 							<div class="accordion__icon">
 								<span class="material-icons">expand_more</span>
@@ -271,7 +284,7 @@
 		<div class="container expert-section__container">
 			<div class="expert-section__guarantee">Get 30 Days Money Back Guarantee</div>
 			<h2 class="expert-section__title">Ready to learn UX Design from the expert?</h2>
-			<a href="#" class="btn expert-section__btn" data-back="Click me" data-front="Get started"></a>
+			<a href="#" class="btn expert-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a>
 		</div>
 	</section>
 

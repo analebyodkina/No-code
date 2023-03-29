@@ -5,10 +5,24 @@ function navToggle() {
 
 
 $('.owl-carousel').owlCarousel({
-    items:2.2,
+    // items:2.2,
     lazyLoad:true,
     loop:true,
-    margin:10
+    margin:10,
+    responsive:{
+      0:{
+          items:1.2,
+          nav:false
+      },
+      600:{
+          items:1.5,
+          nav:false
+      },
+      768:{
+        items:2.2,
+        nav:false
+    }
+  }
 });
 
 
@@ -53,64 +67,28 @@ const toggleItem = (item) =>{
 
 // ПОП-АП
 
-const openPopUp = document.getElementById('openPopUp');
 const popUp = document.getElementById('popUp')
 
-openPopUp.addEventListener('click', function(e){
-  e.preventDefault();
-  popUp.classList.add('active'); 
-  // чтобы закрывалось окно при нажатии на черное
-  popUp.addEventListener('click', function(){
-    popUp.classList.remove('active');   
-  }) 
-  const closePopUp = document.getElementById('closePopUp');
-  closePopUp.addEventListener('click', () => {
+function popup(){
+      document.getElementById('navUl').classList.remove("_active");
+      popUp.classList.add('active');
+      return false;
+}
+
+// чтобы закрывалось окно при нажатии на черное
+popUp.addEventListener('click', function(){
     popUp.classList.remove('active');
-  } )
-})
+});
+const closePopUp = document.getElementById('closePopUp');
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+});
 
 popUp.querySelector('.pop-up__body').addEventListener('click', function(event){  
   event.stopPropagation();
 })
 
+
 // конец ПОП-АПА
 
-// футер
-
-const footerItems = document.querySelectorAll('.bottom__col')
-
-// 1. Selecionar cada item
-footerItems.forEach((item) =>{
-    const footerHeader = item.querySelector('.col__title')
-
-    // 2. Seleccionar cada click del header
-    footerHeader.addEventListener('click', () =>{
-        // 7. Crear la variable
-        const openItem = document.querySelector('.footer-open')
-
-        // 5. Llamar a la funcion toggle item
-        toggleFooterItem(item)
-
-        // 8. Validar si existe la clase
-        if(openItem && openItem!== item){
-          toggleFooterItem(openItem)
-        }
-    })
-})
-
-// 3. Crear una funcion tipo constante
-const toggleFooterItem = (item) =>{
-    // 3.1 Crear la variable
-    const footerContent = item.querySelector('.col__ul')
-
-    // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
-    if(item.classList.contains('footer-open')){
-        accordionContent.removeAttribute('style')
-        item.classList.remove('footer-open')
-    }else{
-        // 4. Agregar el height maximo del content
-        footerContent.style.height = footerContent.scrollHeight + 'px'
-        item.classList.add('footer-open')
-    }
-}
 

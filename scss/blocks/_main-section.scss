@@ -12,7 +12,10 @@
 		background: $purpleGrad;
 		opacity: 0.05;
 		z-index: -1;
-		border-radius: 0px 20px 20px 0px;		
+		border-radius: 0px 20px 20px 0px;
+		@media screen and (min-width: 1500px){
+			max-width: calc(100% - 350px);			
+		}		
 	}
 	padding: 13.4rem 0 9.4rem 0;
 	@include tablet-small {

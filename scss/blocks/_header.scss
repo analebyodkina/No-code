@@ -115,8 +115,7 @@
     transition: .3s all ease-in-out;   
     transform: translateY(-120%);
 	overflow: hidden;
-	z-index: 50;
-    
+	z-index: 50;    
     &__container {
         display: flex;
 		align-items: center;
@@ -131,10 +130,17 @@
         padding: 8rem 5rem;
         position: relative;
         border-radius: 10px;
+		@include mobile {
+			width: 310px;
+			padding: 3rem;
+		}
     }
     &__title {
         @include text ($ffMain, 700, 3.6rem, 4.6rem, $darkGreyBlue);
         margin-bottom: 25px;
+		@include mobile {
+			@include text ($ffMain, 700, 2.4rem, 2.9rem, $darkGreyBlue);
+		}
     }
     form {
         display: flex;

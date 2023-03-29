@@ -14,10 +14,14 @@
         margin-bottom: 10rem;   
         max-width: 565px;  
         margin-inline: auto;   
-    }    
+    }
+    &__container {
+        overflow-x: clip;
+    } 
+
 }
-.owl-carousel {  
-    padding-left: 18rem;  
+.owl-carousel {
+    padding-left: 2rem;    
     .item {
         background: $carousel-card;
         border-radius: 20px;
@@ -25,8 +29,7 @@
         text-align: start;
         &__desc {
             @include text($ffMain, 400, 2rem, 3rem, $white);
-            margin-bottom: 3rem;  
-            // min-width: 460px;                   
+            margin-bottom: 3rem;                                
         }    
         &__footer {
             position: relative;
@@ -54,6 +57,14 @@
             opacity: 0.8;
         }
     }
-    
+    @media screen and (min-width: 1200px) {
+        padding-left: 9rem; 
+    }   
+    @media screen and (min-width: 1480px) {
+        padding-left: 18rem;  
+    }
+    @media screen and (min-width: 1920px) {
+        padding-left: 37.7rem; 
+    }  
 }
 

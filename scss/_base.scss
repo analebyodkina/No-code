@@ -92,3 +92,6 @@ section {
 	@include text($ffAdd, 700, 4rem, 5rem, $darkBlue);
 	margin-bottom: 20px;
 }
+button {
+	padding: 0;
+}

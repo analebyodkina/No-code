@@ -102,13 +102,15 @@
         @include mobile {
             display: none;
         }
-        li:not(:last-child) {
-            margin-bottom: 20px;
+        li {
             transition: $transition;
             @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
             &:hover {
                 transform: scale(1.2) translateX(4px);
             } 
+        }
+        li:not(:last-child) {
+            margin-bottom: 20px;            
         }
         a {
             @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
