@@ -2,7 +2,7 @@
     padding: 6.3rem 0 8rem 0;
     position: relative;
     @include mobile {
-        padding: 3.3rem 0 4rem 0;          		                 
+        padding: 3.3rem 0 1rem 0;          		                 
     }
     &::before {
         content: '';
@@ -29,6 +29,9 @@
     }
     &__logo {
         max-width: 15rem;
+        @include mobile {
+            display: none;         		                 
+        }
     }
     &__form {
         display: flex;
@@ -41,7 +44,7 @@
         padding: 0.8rem 0.8rem 0.8rem 0;
         @include mobile {
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             background: transparent;
             box-shadow: none;		                 
         }
@@ -84,23 +87,36 @@
         justify-content: center; 
         gap: 12rem; 
         @include mobile {
+            padding-top: 2rem;
             gap: 10px;
+            align-items: flex-start;
         }     
     }
 }   
-.col {
+.col {    
     &__title {
         @include text($ffMain, 700, 1.6rem, 2rem, $darkBlue);
-        margin-bottom: 20px;
-        &:hover {
-            .col__ul {
-                display: block;
-            }
-        }        
-    }
-    &__ul {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 20px; 
         @include mobile {
-            display: none;
+            justify-content: center;
+        }               
+    }    
+    &__span {
+        display: none;
+        transition: $transition;
+        @include mobile {
+            display: inline-block;
+        }
+    }    
+    
+    &__ul {        
+        @include mobile {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;            
         }
         li {
             transition: $transition;
@@ -122,5 +138,10 @@
         }
     }
     
+}
+.col__title.active {
+    span {
+        transform: rotate(180deg);
+    }
 }
 

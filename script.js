@@ -65,16 +65,14 @@ const toggleItem = (item) =>{
 }
 
 
-// ПОП-АП
+// модальное окно
 
-const popUp = document.getElementById('popUp')
-
+const popUp = document.getElementById('popUp');
 function popup(){
       document.getElementById('navUl').classList.remove("_active");
       popUp.classList.add('active');
       return false;
 }
-
 // чтобы закрывалось окно при нажатии на черное
 popUp.addEventListener('click', function(){
     popUp.classList.remove('active');
@@ -85,10 +83,33 @@ closePopUp.addEventListener('click', () => {
 });
 
 popUp.querySelector('.pop-up__body').addEventListener('click', function(event){  
-  event.stopPropagation();
-})
+  event.stopPropagation();})
 
 
-// конец ПОП-АПА
+// конец модального окна
 
 
+
+
+
+
+
+
+
+
+// аккордеон футера
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
