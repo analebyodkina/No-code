@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,7 +17,7 @@
 	<title>No-Code</title>
 </head>
 
-<body>
+<body id="body">
 	<div class="container">
 		<header class="header">
 			<a href="#" class="header__logo">
@@ -25,8 +25,8 @@
 			</a>
 			<nav class="nav">
 				<ul class="nav__ul" id="navUl">
-					<li class="nav__li"><a href="#" class="nav__a">Course topics</a></li>
-					<li class="nav__li"><a href="#" class="nav__a">What students say</a></li>
+					<li class="nav__li"><a href="#topics" class="nav__a">Course topics</a></li>
+					<li class="nav__li"><a href="#students" class="nav__a">What students say</a></li>
 					<li class="nav__li _ml-auto"><a href="#" class="nav__a">Sign in</a></li>
 					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a></li>
 					<span class="material-icons icon-close" onclick="navToggle()">close</span>
@@ -40,7 +40,7 @@
 						<form>
 							<input type="text" placeholder="Enter your name">
 							<input type="email" placeholder="Enter your email">
-							<button type="submit" class="btn" data-back="Click me" data-front="Get started"></button>						
+							<button type="submit" class="btn" data-back="Click me" data-front="Get started"></button>
 						</form>
 						<div class="pop-up__close" id="closePopUp">&#10006</div>
 					</div>
@@ -94,7 +94,7 @@
 					<p class="counter__text">5 star reviews</p>
 				</div>
 			</div>
-			<h3 class="title learn-section__title">What you’ll learn</h3>
+			<h3 class="title learn-section__title" id="topics">What you’ll learn</h3>
 			<div class="learn-section__desc">Create beautiful webflow sites with flowbase. Clone for
 				free and get started building a site today.</div>
 			<div class="skills learn-section__skills">
@@ -102,13 +102,13 @@
 					<div class="skills__image">
 						<img src="img/triangle-purple.svg" alt="our logo">
 						<img src="img/triangle-yellow.svg" alt="our logo">
-					</div>	
+					</div>
 					<div class="skills__info">
 						<h3 class="skills__title">Analyzing User Data</h3>
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-					</div>				
-					<a href="#" class="skills__counter">
+					</div>
+					<a href="##" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
 					</a>
@@ -117,13 +117,13 @@
 					<div class="skills__image">
 						<img src="img/triangle-purple.svg" alt="our logo">
 						<img src="img/triangle-yellow.svg" alt="our logo">
-					</div>	
+					</div>
 					<div class="skills__info">
 						<h3 class="skills__title">User Persona</h3>
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-					</div>				
-					<a href="#" class="skills__counter">
+					</div>
+					<a href="##" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
 					</a>
@@ -132,13 +132,13 @@
 					<div class="skills__image">
 						<img src="img/triangle-purple.svg" alt="our logo">
 						<img src="img/triangle-yellow.svg" alt="our logo">
-					</div>	
+					</div>
 					<div class="skills__info">
 						<h3 class="skills__title">Prototyping</h3>
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-					</div>				
-					<a href="#" class="skills__counter">
+					</div>
+					<a href="##" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
 					</a>
@@ -147,12 +147,12 @@
 					<div class="skills__image">
 						<img src="img/triangle-purple.svg" alt="our logo">
 						<img src="img/triangle-yellow.svg" alt="our logo">
-					</div>	
+					</div>
 					<div class="skills__info">
 						<h3 class="skills__title">Storyboarding</h3>
 						<div class="skills__desc">
 							Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-					</div>				
+					</div>
 					<a href="#" class="skills__counter">
 						<p>6 videos</p>
 						<p>4.5 hours</p>
@@ -177,11 +177,11 @@
 	</section>
 
 	<section class="students-section">
-		<h3 class="title students-section__title">What my students say</h3>
+		<h3 class="title students-section__title" id="students">What my students say</h3>
 		<div class="students-section__desc">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</div>
 		<div class="owl-carousel owl-theme students-section__carousel">
 			<div class="item owl-carousel__item">
-				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”
 				</div>
 				<div class="item__footer">
 					<div class="item__icon">
@@ -192,7 +192,7 @@
 				</div>
 			</div>
 			<div class="item owl-carousel__item">
-				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”
 				</div>
 				<div class="item__footer">
 					<div class="item__icon">
@@ -203,7 +203,7 @@
 				</div>
 			</div>
 			<div class="item owl-carousel__item">
-				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”					
+				<div class="item__desc">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”
 				</div>
 				<div class="item__footer">
 					<div class="item__icon">
@@ -213,7 +213,7 @@
 					<div class="item__profession">Founder of Crips</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</section>
 
@@ -297,10 +297,10 @@
 				</div>
 				<form class="footer__form">
 					<input type="email" placeholder="Stay in the loop - sign up with your email">
-					<button class="btn footer__btn" data-back="Click me" data-front="Subscribe">						
-										
+					<button class="btn footer__btn" data-back="Click me" data-front="Subscribe">
+
 					</button>
-				</form>	
+				</form>
 			</div>
 			<div class="footer__bottom">
 				<div class="bottom__col col">
@@ -312,33 +312,33 @@
 						<li><a href="#">Features</a></li>
 						<li><a href="#">Works</a></li>
 						<li><a href="#">Career</a></li>
-						
+
 					</ul>
 				</div>
 				<div class="bottom__col col">
 					<h4 class="col__title collapsible">smth<span class="material-symbols-outlined col__span">expand_more</span></h4>
-					<ul class="col__ul content">	
+					<ul class="col__ul content">
 						<li><a href="#">Contact</a></li>
 						<li><a href="#">Help & Support</a></li>
 						<li><a href="#">Privacy Policy</a></li>
 						<li><a href="#">Terms & Conditions</a></li>
-						
+
 					</ul>
 				</div>
 				<div class="bottom__col col">
 					<h4 class="col__title collapsible">Product<span class="material-symbols-outlined col__span">expand_more</span></h4>
-					<ul class="col__ul content">	
+					<ul class="col__ul content">
 						<li><a href="#">Essential Landing Page</a></li>
 						<li><a href="#">Alpha Dashboard Pro</a></li>
 						<li><a href="#">Karnel Admin Dashboard</a></li>
 						<li><a href="#">Gray UI Kit</a></li>
-						
+
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- SCRIPT -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="owl.carousel.min.js"></script>

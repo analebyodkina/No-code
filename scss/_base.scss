@@ -5,6 +5,7 @@
 }
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 	@include tablet-small {
 		font-size: 7px;
 	}
@@ -19,7 +20,9 @@ body {
 	max-width: $container;
 	margin-inline: auto;
 }
-
+.overflow-hidden {
+	overflow-y: hidden;
+}
 section {
 	max-width: $section;
 	margin-inline: auto;
@@ -28,8 +31,8 @@ section {
 
 .btn {
 	opacity: 1;
-	outline: 0;	
-	position: relative;	
+	outline: 0;
+	position: relative;
 	display: inline-block;
 	&:after{
 		top: 0;
@@ -37,7 +40,7 @@ section {
 		opacity: 0;
 		width: 100%;
 		@include text($ffMain, 400, 2rem, 2.3rem, $white);
-		text-align: center;		
+		text-align: center;
 		border-radius: $radiusRound;
 		padding: 21px 49px;
 		display: block;
@@ -46,8 +49,8 @@ section {
 		background: $orangeGrad;
 		content: attr(data-back);
 		transform: translateY(-50%) rotateX(90deg);
-	}	  
-	&:before{		
+	}
+	&:before{
 		top: 0;
 		left: 0;
 		opacity: 1;
@@ -61,11 +64,11 @@ section {
 		content: attr(data-front);
 		transform: translateY(0) rotateX(0);
 	}
-	&:hover{    
+	&:hover{
 		&:after{
 		  opacity: 1;
 		  transform: translateY(0) rotateX(0);
-		}		
+		}
 		&:before{
 		  opacity: 0;
 		  transform: translateY(50%) rotateX(90deg);
