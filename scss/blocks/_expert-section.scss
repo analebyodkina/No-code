@@ -1,93 +1,92 @@
 .expert-section {
-    padding: 12rem 0;    
-    position: relative;
-    @include mobile {
-        padding: 8rem 0;
-    }
-    &__circle-big {
-        background: $purpleGrad;
-        width: 35.5rem;
-        height: 35.5rem;
-        border-radius: $radiusImage;
-        position: absolute;
-        right: calc(-35.5rem / 2);
-        top: 9rem;
-        z-index: -3;
-        @include tablet {
-            width: 28.5rem;
-            height: 28.5rem;
-            top: 23rem;
-        }
-        @include mobile {
-            display: none;
-        }
-    }
+	padding: 12rem 0;
+	position: relative;
+	@include mobile {
+		padding: 8rem 0;
+	}
+	&__circle-big {
+		background: $purpleGrad;
+		width: 35.5rem;
+		height: 35.5rem;
+		border-radius: $radiusImage;
+		position: absolute;
+		right: calc(-35.5rem / 2);
+		top: 9rem;
+		z-index: -3;
+		@include tablet {
+			width: 28.5rem;
+			height: 28.5rem;
+			top: 23rem;
+		}
+		@include mobile {
+			display: none;
+		}
+	}
 
-    &__circle-small {
-        width: 12.3rem;
-        height: 12.3rem;
-        background: $orangeGrad;
-        border-radius: $radiusImage;
-        position: absolute;
-        top: 8.8rem;
-        right: 3.1rem;
-        z-index: -2;
-        @include tablet {            
-            top: 22.8rem;
-        }
-        @include mobile {
-            display: none;
-        }
-    }
+	&__circle-small {
+		width: 12.3rem;
+		height: 12.3rem;
+		background: $orangeGrad;
+		border-radius: $radiusImage;
+		position: absolute;
+		top: 8.8rem;
+		right: 3.1rem;
+		z-index: -2;
+		@include tablet {
+			top: 22.8rem;
+		}
+		@include mobile {
+			display: none;
+		}
+	}
 
-    &__container {
-        display: flex;
-        align-items: center;
-        flex-direction: column
-    }
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 
-    &__guarantee {
-        @include text($ffAdd, 700, 1.2rem, 1.5rem, #CD10FF);
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;        
-        border-radius: $radiusRound;
-        padding: 8px 35px;
-        margin-bottom: 5rem;
-        position: relative;
-        &::before {
-            content: '';
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: $yellowGrad;
-            mix-blend-mode: normal;
-            opacity: 0.2;
-            z-index: -5;
-            border-radius: $radiusRound;
-        }
-        @include mobile {
-            
-        }
-    }
+	&__guarantee {
+		@include text($ffAdd, 700, 1.2rem, 1.5rem, #cd10ff);
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		border-radius: $radiusRound;
+		padding: 8px 35px;
+		margin-bottom: 5rem;
+		position: relative;
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $yellowGrad;
+			mix-blend-mode: normal;
+			opacity: 0.2;
+			z-index: -5;
+			border-radius: $radiusRound;
+		}
+		@include mobile {
+		}
+	}
 
-    &__title {
-        @include text($ffAdd, 700, 4.6rem, 5.6rem, $darkBlue);
-        text-align: center;
-        margin-bottom: 30px;
-        max-width: 650px;
-    }
+	&__title {
+		@include text($ffAdd, 700, 4.6rem, 5.6rem, $darkBlue);
+		text-align: center;
+		margin-bottom: 30px;
+		max-width: 650px;
+	}
 
-    &__btn {
-        transition: $transition;
-    }
+	&__btn {
+		transition: $transition;
+	}
 }
 .container {
 }

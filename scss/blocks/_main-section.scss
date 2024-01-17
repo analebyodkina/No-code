@@ -1,8 +1,8 @@
 .main-screen {
 	position: relative;
-	&::before {		
+	&::before {
 		position: absolute;
-		content: '';
+		content: "";
 		display: block;
 		max-width: 1090px;
 		width: 100%;
@@ -13,9 +13,9 @@
 		opacity: 0.05;
 		z-index: -1;
 		border-radius: 0px 20px 20px 0px;
-		@media screen and (min-width: 1500px){
-			max-width: calc(100% - 350px);			
-		}		
+		@media screen and (min-width: 1500px) {
+			max-width: calc(100% - 350px);
+		}
 	}
 	padding: 13.4rem 0 9.4rem 0;
 	@include tablet-small {
@@ -37,7 +37,7 @@
 		position: absolute;
 		right: 0;
 		top: 50%;
-		transform: translateY(-50%);		
+		transform: translateY(-50%);
 		@include desktop-small {
 			margin-bottom: 50px;
 			width: 100%;
@@ -45,8 +45,8 @@
 		.video {
 			width: 590px;
 			height: 360px;
-			background: #001A49;
-			box-shadow: 0px 32px 44px #818A8C;
+			background: #001a49;
+			box-shadow: 0px 32px 44px #818a8c;
 			border-radius: 20px 0px 0px 20px;
 			position: relative;
 			display: flex;
@@ -54,17 +54,18 @@
 			justify-content: center;
 			svg {
 				&:active {
-					animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
+					animation: scale-down-center 0.2s
+						cubic-bezier(0.25, 0.46, 0.45, 0.94) both normal;
 					@keyframes scale-down-center {
 						0% {
-						  -webkit-transform: scale(1);
-								  transform: scale(1);
+							-webkit-transform: scale(1);
+							transform: scale(1);
 						}
 						100% {
-						  -webkit-transform: scale(0.93);
-								  transform: scale(0.93);
+							-webkit-transform: scale(0.93);
+							transform: scale(0.93);
 						}
-					  }
+					}
 				}
 			}
 			@include desktop-small {
@@ -80,7 +81,7 @@
 	&__btn {
 		margin-bottom: 10rem;
 		@include tablet-small {
-			margin-bottom: 6rem
+			margin-bottom: 6rem;
 		}
 	}
 }

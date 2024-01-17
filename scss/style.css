@@ -641,9 +641,9 @@ button {
       width: 0%;
       position: relative;
       top: 2px;
-      -webkit-transition: width .3s ease-in-out;
-      -moz--transition: width .3s ease-in-out;
-      transition: width .3s ease-in-out; }
+      -webkit-transition: width 0.3s ease-in-out;
+      -moz--transition: width 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out; }
       @media (max-width: 992px) {
         .nav__a:after {
           background-color: #FFFFFF; } }
@@ -675,8 +675,8 @@ button {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
   overflow: hidden;
@@ -767,7 +767,7 @@ button {
   padding: 13.4rem 0 9.4rem 0; }
   .main-screen::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     max-width: 1090px;
     width: 100%;
@@ -815,9 +815,9 @@ button {
     .main-screen__img .video {
       width: 590px;
       height: 360px;
-      background: #001A49;
-      -webkit-box-shadow: 0px 32px 44px #818A8C;
-              box-shadow: 0px 32px 44px #818A8C;
+      background: #001a49;
+      -webkit-box-shadow: 0px 32px 44px #818a8c;
+              box-shadow: 0px 32px 44px #818a8c;
       border-radius: 20px 0px 0px 20px;
       position: relative;
       display: -webkit-box;
@@ -885,7 +885,7 @@ button {
   padding: 13.4rem 0 9.4rem 0; }
   .main-screen::before {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     max-width: 1090px;
     width: 100%;
@@ -933,9 +933,9 @@ button {
     .main-screen__img .video {
       width: 590px;
       height: 360px;
-      background: #001A49;
-      -webkit-box-shadow: 0px 32px 44px #818A8C;
-              box-shadow: 0px 32px 44px #818A8C;
+      background: #001a49;
+      -webkit-box-shadow: 0px 32px 44px #818a8c;
+              box-shadow: 0px 32px 44px #818a8c;
       border-radius: 20px 0px 0px 20px;
       position: relative;
       display: -webkit-box;
@@ -1451,10 +1451,10 @@ button {
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    color: #CD10FF;
+    color: #cd10ff;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+    background: linear-gradient(44.11deg, #cd10ff 15.75%, #9f06ff 84.63%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1464,7 +1464,7 @@ button {
     margin-bottom: 5rem;
     position: relative; }
     .expert-section__guarantee::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -1497,7 +1497,7 @@ button {
     .footer {
       padding: 3.3rem 0 1rem 0; } }
   .footer::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 100%;
     height: 100%;
