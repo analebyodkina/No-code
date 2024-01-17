@@ -25,10 +25,10 @@
 			</a>
 			<nav class="nav">
 				<ul class="nav__ul" id="navUl">
-					<li class="nav__li"><a href="#topics" class="nav__a">Course topics</a></li>
-					<li class="nav__li"><a href="#students" class="nav__a">What students say</a></li>
-					<li class="nav__li _ml-auto"><a href="#" class="nav__a">Sign in</a></li>
-					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a></li>
+					<li class="nav__li"><a href="#topics" class="nav__a" onclick="hideBurger()">Course topics</a></li>
+					<li class="nav__li"><a href="#students" class="nav__a" onclick="hideBurger()">What students say</a></li>
+					<li class="nav__li _ml-auto"><a href="#" class="nav__a" onclick="hideBurger()">Sign in</a></li>
+					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" onclick="hideBurger();popup(this)"></a></li>
 					<span class="material-icons icon-close" onclick="navToggle()">close</span>
 				</ul>
 				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>

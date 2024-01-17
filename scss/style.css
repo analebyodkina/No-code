@@ -1277,7 +1277,7 @@ button {
       display: block;
       max-height: 354px; }
     .instructor-section__image::before {
-      content: '';
+      content: "";
       display: block;
       width: 8.8rem;
       height: 8.8rem;
@@ -1290,7 +1290,7 @@ button {
         .instructor-section__image::before {
           left: 20px; } }
     .instructor-section__image::after {
-      content: '';
+      content: "";
       display: block;
       width: 13.2rem;
       height: 13.2rem;
