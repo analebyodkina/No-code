@@ -65,16 +65,16 @@ section {
 		content: attr(data-front);
 		transform: translateY(0) rotateX(0);
 	}
-	&:hover{
-		&:after{
-		  opacity: 1;
-		  transform: translateY(0) rotateX(0);
-		}
-		&:before{
-		  opacity: 0;
-		  transform: translateY(50%) rotateX(90deg);
-		}
-	}
+	// &:hover{
+	// 	&:after{
+	// 	  opacity: 1;
+	// 	  transform: translateY(0) rotateX(0);
+	// 	}
+	// 	&:before{
+	// 	  opacity: 0;
+	// 	  transform: translateY(50%) rotateX(90deg);
+	// 	}
+	// }
 	&:active {
 		animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
 		@keyframes scale-down-center {
@@ -113,4 +113,19 @@ button {
 *::-webkit-scrollbar-track {
 	background: #FFD7A9; 
 	      /* color of the tracking area */
+  }
+  @media (hover:hover) {
+	.btn{
+		&:hover{
+			&:after{
+			  opacity: 1;
+			  transform: translateY(0) rotateX(0);
+			}
+			&:before{
+			  opacity: 0;
+			  transform: translateY(50%) rotateX(90deg);
+			}
+		}
+
+	}
   }
