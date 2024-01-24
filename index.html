@@ -28,7 +28,7 @@
 					<li class="nav__li"><a href="#topics" class="nav__a" onclick="hideBurger()">Course topics</a></li>
 					<li class="nav__li"><a href="#students" class="nav__a" onclick="hideBurger()">What students say</a></li>
 					<li class="nav__li _ml-auto"><a href="#" class="nav__a" onclick="hideBurger()">Sign in</a></li>
-					<li class="nav__li"><a href="#" class="btn nav__btn" data-back="Click me" data-front="Get started" onclick="hideBurger();popup(this)"></a></li>
+					<li class="nav__li"><a href="#" class="btn nav__btn" aria-label="sign up button" data-back="Click me" data-front="Get started" onclick="hideBurger();popup(this)"></a></li>
 					<span class="material-icons icon-close" onclick="navToggle()">close</span>
 				</ul>
 				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
@@ -40,7 +40,7 @@
 						<form>
 							<input type="text" placeholder="Enter your name">
 							<input type="email" placeholder="Enter your email">
-							<button type="submit" class="btn" data-back="Click me" data-front="Get started"></button>
+							<button type="submit" class="btn" data-back="Click me" data-front="Get started" aria-label="submit button"></button>
 						</form>
 						<div class="pop-up__close" id="closePopUp">&#10006</div>
 					</div>
@@ -51,10 +51,10 @@
 
 	<section class="main-screen">
 		<div class="container main-screen__container">
-			<div class="main-screen__title">Learn no-code tools today.</div>
+			<h1 class="main-screen__title">Learn no-code tools today.</div>
 			<div class="main-screen__desc">Create beautiful webflow sites with flowbase. Clone for
 				free and get started building a site today.</div>
-			<a href="#" class="main-screen__img">
+			<a href="#" class="main-screen__img" aria-label="image preview of a video">
 				<div class="video">
 					<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 54.33 15.67 70 35 70Z" fill="white" />
@@ -285,7 +285,7 @@
 		<div class="container expert-section__container">
 			<div class="expert-section__guarantee">Get 30 Days Money Back Guarantee</div>
 			<h2 class="expert-section__title">Ready to learn UX Design from the expert?</h2>
-			<a href="#" class="btn expert-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a>
+			<a href="#" class="btn expert-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)" aria-label="sign up button"></a>
 		</div>
 	</section>
 
@@ -297,7 +297,7 @@
 				</div>
 				<form class="footer__form">
 					<input type="email" placeholder="Stay in the loop - sign up with your email">
-					<button class="btn footer__btn" data-back="Click me" data-front="Subscribe">
+					<button class="btn footer__btn" data-back="Click me" data-front="Subscribe" aria-label="subscribe button">
 
 					</button>
 				</form>
