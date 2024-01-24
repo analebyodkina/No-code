@@ -28,8 +28,8 @@
 					<li class="nav__li"><a href="#topics" class="nav__a" onclick="hideBurger()">Course topics</a></li>
 					<li class="nav__li"><a href="#students" class="nav__a" onclick="hideBurger()">What students say</a></li>
 					<li class="nav__li _ml-auto"><a href="#" class="nav__a" onclick="hideBurger()">Sign in</a></li>
-					<li class="nav__li"><a href="#" class="btn nav__btn" aria-label="sign up button" data-back="Click me" data-front="Get started" onclick="hideBurger();popup(this)"></a></li>
-					<span class="material-icons icon-close" onclick="navToggle()">close</span>
+					<li class="nav__li"><a href="#" class="btn nav__btn" aria-label="sign up button" data-back="Click me" data-front="Get started" onclick="hideBurger();popup(this)"></a>
+					<span class="material-icons icon-close" onclick="navToggle()">close</span></li>
 				</ul>
 				<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
 			</nav>
@@ -51,7 +51,7 @@
 
 	<section class="main-screen">
 		<div class="container main-screen__container">
-			<h1 class="main-screen__title">Learn no-code tools today.</div>
+			<h1 class="main-screen__title">Learn no-code tools today.</h1>
 			<div class="main-screen__desc">Create beautiful webflow sites with flowbase. Clone for
 				free and get started building a site today.</div>
 			<a href="#" class="main-screen__img" aria-label="image preview of a video">
@@ -63,7 +63,7 @@
 				</div>
 			</a>
 			<div class="main-screen__btn">
-				<a href="#" class="btn main-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)"></a>
+				<a href="#" class="btn main-section__btn" data-back="Click me" data-front="Get started" onclick="popup(this)" aria-label="subscribe button"></a>
 			</div>
 			<div class="students main-screen__students">
 				<div class="students__list">
@@ -94,7 +94,7 @@
 					<p class="counter__text">5 star reviews</p>
 				</div>
 			</div>
-			<h3 class="title learn-section__title" id="topics">What you’ll learn</h3>
+			<div class="title learn-section__title" id="topics">What you’ll learn</h3>
 			<div class="learn-section__desc">Create beautiful webflow sites with flowbase. Clone for
 				free and get started building a site today.</div>
 			<div class="skills learn-section__skills">
@@ -304,7 +304,7 @@
 			</div>
 			<div class="footer__bottom">
 				<div class="bottom__col col">
-					<h4 class="col__title collapsible">Help Menu<span class="material-symbols-outlined col__span">
+					<div class="col__title collapsible">Help Menu<span class="material-symbols-outlined col__span">
 						expand_more
 						</span></h4>
 					<ul class="col__ul content">
