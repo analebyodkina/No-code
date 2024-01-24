@@ -99,12 +99,17 @@ button {
 	padding: 0;
 }
 *::-webkit-scrollbar {
-    width: 10rem;
-    height: 10rem;
+    width: 1.4rem;
+    height: 1.5rem;
 }
 *::-webkit-scrollbar-thumb {
     border-radius: 16rem;
-    height: 10px;
-    width: 8rem;
-    background-color: var(--accent);    
+    height: 15px;
+    width: 1.4rem;
+    background-color: $purple; 
+	border: 3px solid #FFD7A9;   
 }
+*::-webkit-scrollbar-track {
+	background: #FFD7A9; 
+	      /* color of the tracking area */
+  }
