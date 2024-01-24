@@ -124,6 +124,9 @@
       @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
       &:hover {
         transform: scale(1.2) translateX(4px);
+		@include mobile {
+			transform: scale(1) translateX(0);
+		}
       }
     }
     li:not(:last-child) {
