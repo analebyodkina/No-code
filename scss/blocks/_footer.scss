@@ -90,7 +90,7 @@
       padding-top: 2rem;
       gap: 10px;
       align-items: flex-start;
-	  justify-content: space-between;
+      justify-content: space-between;
     }
   }
 }
@@ -122,12 +122,6 @@
     li {
       transition: $transition;
       @include text($ffMain, 400, 1.6rem, 2rem, $darkGreyBlue);
-      &:hover {
-        transform: scale(1.2) translateX(4px);
-		@include mobile {
-			transform: scale(1) translateX(0);
-		}
-      }
     }
     li:not(:last-child) {
       margin-bottom: 20px;
@@ -148,5 +142,12 @@
 .col__title.active {
   span {
     transform: rotate(180deg);
+  }
+}
+@media (hover: hover) {
+  .col__ul li {
+    &:hover {
+      transform: scale(1.2) translateX(4px);
+    }
   }
 }
