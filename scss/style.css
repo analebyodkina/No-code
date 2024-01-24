@@ -1492,6 +1492,9 @@ button {
       opacity: 0.2;
       z-index: -5;
       border-radius: 33px; }
+    @media (max-width: 576px) {
+      .expert-section__guarantee {
+        font-size: 1.4rem; } }
   .expert-section__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -1656,7 +1659,10 @@ button {
         gap: 10px;
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start; } }
+                align-items: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
 
 .col__title {
   font-family: "Mulish", sans-serif;
@@ -1711,6 +1717,9 @@ button {
   color: #4F596A; }
 .col:nth-child(2) .col__title {
   color: transparent; }
+  @media (max-width: 576px) {
+    .col:nth-child(2) .col__title {
+      color: inherit; } }
 
 .col__title.active span {
   -webkit-transform: rotate(180deg);
