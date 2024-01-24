@@ -1494,7 +1494,8 @@ button {
       border-radius: 33px; }
     @media (max-width: 576px) {
       .expert-section__guarantee {
-        font-size: 1.4rem; } }
+        font-size: 1.4rem;
+        text-align: center; } }
   .expert-section__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
